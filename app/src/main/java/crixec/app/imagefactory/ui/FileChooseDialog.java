@@ -19,6 +19,7 @@ import java.util.Date;
 import java.util.HashMap;
 
 import crixec.app.imagefactory.R;
+import crixec.app.imagefactory.core.Constant;
 import crixec.app.imagefactory.util.DeviceUtils;
 import crixec.app.imagefactory.util.FileComparator;
 import crixec.app.imagefactory.util.FileUtils;
@@ -48,12 +49,12 @@ public class FileChooseDialog extends AppCompatDialog {
         this.mCallback = callback;
         setTitle(title);
         if (XmlDataUtils.getString("LAST_PATH").equals("")) {
-            XmlDataUtils.putString("LAST_PATH", "/");
+            XmlDataUtils.putString("LAST_PATH", XmlDataUtils.getString(Constant.KEY_DATA_PATH));
         }
         String p = XmlDataUtils.getString("LAST_PATH");
         if (!new File(p).canRead()) {
-            p = "/";
-            XmlDataUtils.putString("LAST_PATH", "/");
+            p = XmlDataUtils.getString(Constant.KEY_DATA_PATH);
+            XmlDataUtils.putString("LAST_PATH", XmlDataUtils.getString(Constant.KEY_DATA_PATH));
         }
         path = new File(p);
         File selected = path;
@@ -127,10 +128,12 @@ public class FileChooseDialog extends AppCompatDialog {
     public ArrayList<File> listDirectory(File dir) {
         list = new ArrayList<File>();
         File[] childFiles = dir.listFiles();
-        for (File file : childFiles) {
-            list.add(file);
+        if(childFiles != null && childFiles.length > 0) {
+            for (File file : childFiles) {
+                list.add(file);
+            }
+            Collections.sort(list, new FileComparator());
         }
-        Collections.sort(list, new FileComparator());
         list.add(0, dir);
         return list;
     }

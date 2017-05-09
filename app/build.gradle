@@ -8,17 +8,17 @@ def getBuildDate() {
     return df.format(new Date())
 }
 
-def baseVersionName = "2.5.8";
+def baseVersionName = "2.5.9";
 
 android {
     compileSdkVersion 23
-    buildToolsVersion "24.0.1"
+    buildToolsVersion '25.0.0'
 
     defaultConfig {
         applicationId "crixec.app.imagefactory"
         minSdkVersion 15
         targetSdkVersion 23
-        versionCode 13
+        versionCode 14
         versionName baseVersionName + "-preview-${getBuildDate()}"
 
     }
@@ -33,7 +33,7 @@ android {
         release {
             minifyEnabled false
             zipAlignEnabled true
-            shrinkResources true
+            shrinkResources false
             defaultConfig.versionName = baseVersionName;
         }
     }
