@@ -8,11 +8,19 @@
 # 更新日志
 ```
 
-版本名称：2.5.9
-版本号：14
-更新日期：20170502
 
-1、Fix 7.x choose file FC
+版本名称：2.7.10
+版本号：15
+更新日期：201705019
+
+1、修复 7.x 选择文件停止运行
+
+版本名称：2.6.9
+版本号：14
+更新日期：20161119
+
+1、修复 Cpio 编辑器打开问题
+
 
 版本名称：2.5.8
 版本号：13
@@ -112,6 +120,6 @@ Email : crixec@gmail.com 79236107@qq.com
 * [ImageFactory_2.4.7.apk](https://github.com/Crixec/ImageFactory/blob/master/app/ImageFactory_2.4.7.apk)
 * [ImageFactory_2.5.8.apk](https://github.com/Crixec/ImageFactory/blob/master/app/ImageFactory_2.5.8.apk)
 * [ImageFactory_2.5.9.apk](https://github.com/Crixec/ImageFactory/blob/master/app/ImageFactory_2.5.9.apk)
-
+* [ImageFactory_2.6.10.apk](https://github.com/Crixec/ImageFactory/blob/master/app/ImageFactory_2.6.10.apk)
 # QQ 群
 * [68641685](http://jq.qq.com/?_wv=1027&k=2CICcTp)

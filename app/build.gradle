@@ -8,7 +8,7 @@ def getBuildDate() {
     return df.format(new Date())
 }
 
-def baseVersionName = "2.5.9";
+def baseVersionName = "2.6.10";
 
 android {
     compileSdkVersion 23

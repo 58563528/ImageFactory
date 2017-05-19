@@ -45,13 +45,15 @@
             android:label="@string/cpio_editor"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
-                <action android:name="android.intent.action.VIEW" />
-                <category android:name="android.intent.category.DEFAULT" />
-
-                <data android:scheme="file" />
-                <data android:scheme="content" />
-                <data android:mimeType="*/*" />
-                <data android:pathPattern=".*\\cpio.list" />
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="file"/>
+                <data android:mimeType="*/*"/>
+                <data android:host="*"/>
+                <data android:pathPattern=".*\\.list"/>
+                <data android:pathPattern=".*\\..*\\.list"/>
+                <data android:pathPattern=".*\\..*\\..*\\.list"/>
+                <data android:pathPattern=".*\\..*\\..*\\..*\\.list"/>
             </intent-filter>
         </activity>
     </application>
