@@ -18,7 +18,7 @@ android {
         applicationId "crixec.app.imagefactory"
         minSdkVersion 15
         targetSdkVersion 23
-        versionCode 14
+        versionCode 15
         versionName baseVersionName + "-preview-${getBuildDate()}"
 
     }
