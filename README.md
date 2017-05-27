@@ -6,7 +6,7 @@
 
 ```
 # 更新日志
-![Changelog.txt](https://raw.githubusercontent.com/Crixec/ImageFactory/master/app/src/main/assets/changelog.txt)
+* [Changelog.txt](https://raw.githubusercontent.com/Crixec/ImageFactory/master/app/src/main/assets/changelog.txt)
 
 # 应用截图
 ![Screenshot](https://raw.githubusercontent.com/Crixec/ImageFactory/master/Screenshots/splash.png)
